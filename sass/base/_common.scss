@@ -1,0 +1,80 @@
+body {
+  background-color: $color-primary-bg;
+  color: $color-primary-text;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.container--footer {
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
+}
+.container--secondary {
+  background-color: $color-secondary-bg;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.icon {
+  fill: $color-icon-fill;
+  .regular-clients__link:hover & {
+    fill: $color-accent;
+  }
+}
+
+.title {
+  color: $color-title-text;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: $color-primary-bg;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
