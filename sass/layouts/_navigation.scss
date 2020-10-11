@@ -1,11 +1,11 @@
 .site-nav {
   @media screen and (max-width: 767px) {
-    display: inline-block;
-    padding-right: 190px;
-    padding-left: 190px;
+    position: relative;
     align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 190px;
+    padding-left: 190px;
     text-align: center;
   }
   @media screen and (min-width: $tablet) {
