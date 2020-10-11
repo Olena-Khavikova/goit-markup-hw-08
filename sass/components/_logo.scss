@@ -6,6 +6,19 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+.logo-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 93px;
+  }
+}
+
 .page-header__logo {
   color: $color-title-text;
 }

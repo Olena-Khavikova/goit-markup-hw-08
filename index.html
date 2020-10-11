@@ -16,17 +16,37 @@
   </head>
   <body>
     <header class="page-header">
-
-    
       <div class="container">
-        <nav class="main-nav">
+        <div class="logo-header">
           <a href="./index.html" class="link"
             ><span class="logo">Web</span
             ><span class="logo page-header__logo">Studio</span>
           </a>
-      </div>
-</header>
-          <!-- <ul class="site-nav list">
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/icons/sprite.svg#icon-close_40px"
+            ></use>
+            <use
+              class="icon-burger-menu"
+              href="./images/icons/sprite.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+        <nav class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav list">
             <li class="site-nav__item">
               <a
                 href="./index.html"
@@ -43,30 +63,31 @@
               <a href="" class="site-nav__link link">Контакты</a>
             </li>
           </ul>
+
+          <ul class="contacts-header list">
+            <li class="contacts-header__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-header__link link"
+              >
+                <svg class="contacts-header__icon" width="16" height="12">
+                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-header__item">
+              <a href="tel:+380961111111" class="contacts-header__link link"
+                ><svg class="contacts-header__icon" width="10" height="16">
+                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
         </nav>
-        <ul class="contacts-header list">
-          <li class="contacts-header contacts-header__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-header__link link"
-            >
-              <svg class="contacts-header__icon" width="16" height="12">
-                <use href="./images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-header contacts-header__item">
-            <a href="tel:+380961111111" class="contacts-header__link link"
-              ><svg class="contacts-header__icon" width="10" height="16">
-                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      -->
-    
+      </div>
+    </header>
 
     <main>
       <!-- <div class="container"> -->
@@ -94,7 +115,6 @@
 
             <li class="features__item icon-clock">
               <h3 class="title features__title">Пунктуальность</h3>
-
               <p class="features__item-description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -109,7 +129,6 @@
             </li>
             <li class="features__item icon-astronaut">
               <h3 class="title features__title">Современные технологии</h3>
-
               <p class="features__item-description">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -118,8 +137,8 @@
           </ul>
         </section>
       </div>
-      <!-- <div class="container">
-        <section class="section">
+      <div class="container">
+        <section class="section section--hidden">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="areas list">
             <li class="areas__item">
@@ -142,7 +161,7 @@
             </li>
           </ul>
         </section>
-      </div> -->
+      </div>
       <div class="container container--secondary">
         <section class="section">
           <h2 class="section__title">Наша команда</h2>
@@ -623,8 +642,10 @@
           <label class="checkbox__label">
             <input class="checkbox" type="checkbox" name="checkbox" />
             <span class="checkbox__icon"> </span>
-            <span class="checkbox__policy">Соглашаюсь с рассылкой и принимаю</span>
-             <a class="checkbox__link" href="_blank">Условия договора</a>
+            <span class="checkbox__policy"
+              >Соглашаюсь с рассылкой и принимаю</span
+            >
+            <a class="checkbox__link" href="_blank">Условия договора</a>
           </label>
 
           <div class="form__button">
@@ -635,5 +656,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -3,6 +3,11 @@
   padding-bottom: 60px;
 }
 
+.section--hidden {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .section__title {
   margin-top: 0;
   margin-bottom: 50px;
