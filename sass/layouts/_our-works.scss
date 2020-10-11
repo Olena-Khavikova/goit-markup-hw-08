@@ -65,7 +65,7 @@
   letter-spacing: 0.03em;
   color: $color-primary-bg;
 
-  transform: translateY(100%);
+  transform: translateY(108%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .our-works__item:hover & {
     transform: translateY(0);

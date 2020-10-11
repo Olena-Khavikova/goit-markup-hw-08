@@ -14,6 +14,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -52,7 +53,6 @@ img {
 
 .link {
   text-decoration: none;
-    
 }
 .icon {
   fill: $color-icon-fill;
