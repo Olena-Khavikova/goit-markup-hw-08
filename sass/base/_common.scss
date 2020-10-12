@@ -20,11 +20,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-  }
   @media screen and (min-width: $tablet) {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -39,6 +35,8 @@ img {
 }
 .container--secondary {
   background-color: $color-secondary-bg;
+  width: 100%;
+  justify-content: center;
 }
 
 .no-padding-bottom {
